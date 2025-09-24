@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1758678853387",
+    "createdAt": "2025-09-24T07:24:13.396639Z",
+    "fileName": "1758678853387.pdf",
+    "data": {
+      "personal": {
+        "name": "Ak\u00e1si V",
+        "email": "akash@gmail.com",
+        "phone": "9292929292",
+        "address": "Cuba man oras, Cuba kumuha sanhi, Cuba"
+      },
+      "summary": "I am a professional students am a professional students am a professional students am a professional students am a professional students am a professional students am a professional students am a professional students am a professional student",
+      "skills": [
+        "Python (panda",
+        "numpy",
+        "Scikit-learn",
+        "matplotlib",
+        "Seaborne) R (for statistical analysis and visualization) SQL (querying",
+        "joins",
+        "Aggregations) Bash / shell scripting (optional",
+        "But nice for data pipelines)"
+      ],
+      "experience": [
+        {
+          "position": "manager",
+          "company": "bac",
+          "startDate": "21/04/2006",
+          "endDate": "31/01/2007",
+          "description": "I am a professional students am a professional students am a professional students am a professional students am a professional students am a professional student"
+        },
+        {
+          "position": "Senior manager",
+          "company": "ABC",
+          "startDate": "26/02/2008",
+          "endDate": "29/02/2010",
+          "description": "I am a professional students am a professional students am a professional students am a professional students am a professional students am a professional students am a professional students am a professional student"
+        }
+      ],
+      "education": [
+        {
+          "degree": "UG",
+          "institution": "NALAMAN COLEGIO OO TECHNOLOGY",
+          "startDate": "21/12/2021",
+          "endDate": "22/12/2027",
+          "description": "I am a professional students am a professional students am a professional students am a professional students am a professional students am a professional students am a professional students am a professional students am a professional student"
+        },
+        {
+          "degree": "sch",
+          "institution": "MOUNTAIN HOME SCHOOL AND JR COLLEGE",
+          "startDate": "21/12/2020",
+          "endDate": "21/12/2022",
+          "description": "i am a professional studenti am a professional studenti am a professional studenti am a professional studenti am a professional studenti am a professional studenti am a professional studenti am a professional studenti am a professional student"
+        }
+      ]
+    }
+  }
+]

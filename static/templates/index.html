@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder (Flask)</title>
+  <style>
+    /* Dark theme styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #1a2038;
+      color: #e0e6f5;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #66fcf1;
+      font-size: 32px;
+    }
+    .form-section {
+      background-color: #242b4d;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    .form-section h3 {
+      margin-top: 0;
+      color: #8be8fd;
+      font-size: 20px;
+      border-bottom: 1px solid #3a416f;
+      padding-bottom: 6px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0 10px;
+      border: 1px solid #37406a;
+      border-radius: 4px;
+      box-sizing: border-box;
+      background-color: #2e3563;
+      color: #e0e6f5;
+    }
+    input::placeholder,
+    textarea::placeholder {
+      color: #7882ac;
+    }
+    textarea {
+      min-height: 60px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px 0;
+      background-image: linear-gradient(45deg, #0fd96f, #00aaff);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn.secondary {
+      background-image: linear-gradient(45deg, #5a67d8, #4c51bf);
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+    .experience-item, .education-item {
+      border: 1px solid #37406a;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      background-color: #2e3563;
+    }
+    #result {
+      margin-top: 20px;
+      padding: 10px;
+    }
+    #resumeList {
+      list-style: none;
+      padding-left: 0;
+    }
+    #resumeList li {
+      margin-bottom: 5px;
+    }
+    #resumeList a {
+      color: #67d4ff;
+      text-decoration: none;
+    }
+    #resumeList a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Resume Builder</h1>
+  <form id="resumeForm">
+    <div class="form-section">
+      <h3>Personal Details</h3>
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="phone" placeholder="Phone" required>
+      <input type="text" name="address" placeholder="Address">
+    </div>
+    <div class="form-section">
+      <h3>Summary</h3>
+      <textarea name="summary" placeholder="Professional summary"></textarea>
+    </div>
+    <div class="form-section">
+      <h3>Skills</h3>
+      <input type="text" name="skills" placeholder="Comma separated skills (e.g. JavaScript, SQL)">
+    </div>
+    <div class="form-section">
+      <h3>Experience</h3>
+      <div id="experienceContainer"></div>
+      <button type="button" id="addExperience" class="btn">Add Experience</button>
+    </div>
+    <div class="form-section">
+      <h3>Education</h3>
+      <div id="educationContainer"></div>
+      <button type="button" id="addEducation" class="btn">Add Education</button>
+    </div>
+    <button type="submit" class="btn">Generate Resume</button>
+  </form>
+  <div id="result"></div>
+  <div class="form-section">
+    <h3>Previously Generated Resumes</h3>
+    <ul id="resumeList"></ul>
+  </div>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
+
+
